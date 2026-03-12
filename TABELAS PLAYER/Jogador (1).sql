@@ -5,3 +5,11 @@ create table jogadores(
     -> criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     -> ultimo_login DATETIME
     -> );
+
+    INSERT INTO jogadores (steam_id, nome, ultimo_login)
+VALUES
+('STEAM_0:1:111111', 'Carlos', NOW()),
+('STEAM_0:1:222222', 'Ana', NOW()),
+('STEAM_0:1:333333', 'Pedro', NOW()),
+('STEAM_0:1:444444', 'Marcos', NOW()),
+('STEAM_0:1:555555', 'Julia', NOW());
