@@ -6,3 +6,7 @@ CREATE TABLE visitante (
     horario_saida DATETIME,
     kills INT DEFAULT 0
 );
+
+--Insert Visitante--
+INSERT INTO visitante (nome_usuario, horario_entrada)
+VALUES ('Julio', NOW());
