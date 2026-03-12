@@ -1,0 +1,8 @@
+--Criação da tabela Visitante--
+CREATE TABLE visitante (
+    id_visitante INT AUTO_INCREMENT PRIMARY KEY,
+    nome_usuario VARCHAR(50) NOT NULL,
+    horario_entrada DATETIME NOT NULL,
+    horario_saida DATETIME,
+    kills INT DEFAULT 0
+);
