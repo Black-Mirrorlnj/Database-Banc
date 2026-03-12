@@ -8,5 +8,10 @@ CREATE TABLE visitante (
 );
 
 --Insert Visitante--
-INSERT INTO visitante (nome_usuario, horario_entrada)
-VALUES ('Julio', NOW());
+INSERT INTO visitante (nome_usuario, horario_entrada, horario_saida, kills)
+VALUES
+('Julio', '2026-03-12 08:00:00', '2026-03-12 08:30:00', 5),
+('Carlos', '2026-03-12 08:10:00', '2026-03-12 09:00:00', 12),
+('Ana', '2026-03-12 08:20:00', '2026-03-12 08:45:00', 3),
+('Pedro', '2026-03-12 08:25:00', '2026-03-12 09:10:00', 9),
+('Lucas', '2026-03-12 08:30:00', '2026-03-12 09:15:00', 7);
