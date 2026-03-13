@@ -1,0 +1,14 @@
+-------Procedures Registra entrada é saída------------
+DELIMITER //
+
+CREATE PROCEDURE registrar_entrada (
+    IN p_nome VARCHAR(50)
+)
+BEGIN
+    INSERT INTO visitante (nome_usuario, horario_entrada)
+    VALUES (p_nome, NOW());
+END //
+
+DELIMITER ;
+
+-----Prodecures Registrar entrada é saída-----------
