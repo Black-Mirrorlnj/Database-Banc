@@ -1,4 +1,5 @@
 -------Procedures Registra entrada------------
+
 DELIMITER //
 
 CREATE PROCEDURE registrar_entrada (
@@ -10,5 +11,6 @@ BEGIN
 END //
 
 DELIMITER ;
+CALL registrar_entrada('Julio');
 
 -----Prodecures Registrar entrada-----------
