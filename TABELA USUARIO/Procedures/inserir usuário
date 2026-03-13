@@ -1,0 +1,12 @@
+DELIMITER $$
+
+CREATE PROCEDURE sp_insert_user (
+    IN p_username VARCHAR(50),
+    IN p_password VARCHAR(100)
+)
+BEGIN
+    INSERT INTO users (username, password)
+    VALUES (p_username, p_password);
+END $$
+
+DELIMITER ;
