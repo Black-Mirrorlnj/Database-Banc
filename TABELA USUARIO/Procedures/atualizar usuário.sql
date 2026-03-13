@@ -1,3 +1,5 @@
+-------atualizar usuário--------
+
 DELIMITER $$
 
 CREATE PROCEDURE sp_update_user (
