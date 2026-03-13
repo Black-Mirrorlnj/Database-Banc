@@ -10,4 +10,9 @@ CREATE TABLE administrador (
     status VARCHAR(20) DEFAULT 'ativo', -- ativo / suspenso
     criado_em DATETIME DEFAULT CURRENT_TIMESTAMP, -- Data de criação
     ultimo_login DATETIME -- Último login do administrador
+    INSERT INTO administrador (username, password, email, nivel_acesso)
+VALUES
+('admin_master', 'admin123', 'master@server.com', 3),
+('moderador1', 'mod123', 'mod1@server.com', 1),
+('admin_gm', 'admin456', 'admin@server.com', 2);
 );
