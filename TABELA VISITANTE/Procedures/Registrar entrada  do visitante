@@ -1,4 +1,4 @@
--------Procedures Registra entrada é saída------------
+-------Procedures Registra entrada------------
 DELIMITER //
 
 CREATE PROCEDURE registrar_entrada (
@@ -11,4 +11,4 @@ END //
 
 DELIMITER ;
 
------Prodecures Registrar entrada é saída-----------
+-----Prodecures Registrar entrada-----------
