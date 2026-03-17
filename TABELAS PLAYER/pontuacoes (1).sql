@@ -21,3 +21,27 @@ VALUES
 SELECT j.nome, p.partida_id, p.score_final
 FROM pontuacoes p
 JOIN jogadores j ON p.jogador_id = j.id;
+
+--Atualização dos Pontos--
+
+DELIMITER //
+
+CREATE TRIGGER log_update_pontuacoes
+AFTER UPDATE ON pontuacoes
+FOR EACH ROW
+BEGIN
+
+INSERT INTO logs (tabela, acao, descricao)
+VALUES (
+    'pontuacoes',
+    'UPDATE',
+    CONCAT(
+        'Jogador ', NEW.jogador_id,
+        ' na partida ', NEW.partida_id,
+        ' | Score: ', OLD.score_final, ' -> ', NEW.score_final
+    )
+);
+
+END //
+
+DELIMITER ;

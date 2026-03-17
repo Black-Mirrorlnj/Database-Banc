@@ -33,6 +33,17 @@ UPDATE ranking_global
 SET pontos = pontos + p_score_final
 WHERE jogador_id = p_jogador_id;
 
+INSERT INTO logs (tabela, acao, descricao)
+VALUES (
+    'pontuacoes',
+    'UPDATE',
+    CONCAT(
+        'Jogador ', p_jogador_id,
+        ' finalizou partida ', p_partida_id,
+        ' com score ', p_score_final
+    )
+);
+
 END //
 
 DELIMITER ;
@@ -40,4 +51,5 @@ DELIMITER ;
 
 --Execute do procedimento--
 CALL finalizar_partida_completa(2, 3, 250, 12, 4);
+
 
