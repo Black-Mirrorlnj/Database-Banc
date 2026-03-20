@@ -1,4 +1,4 @@
--------Registro------
+-------Registro Partida------
 
 DELIMITER $$
 
