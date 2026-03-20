@@ -1,3 +1,5 @@
+-------Logout-------
+
 DELIMITER $$
 
 CREATE TRIGGER trg_game_logout
