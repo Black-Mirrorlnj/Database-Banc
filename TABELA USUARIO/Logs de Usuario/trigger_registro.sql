@@ -1,3 +1,5 @@
+-------Registro------
+
 DELIMITER $$
 
 CREATE TRIGGER trg_match_insert
