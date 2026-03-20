@@ -1,4 +1,4 @@
--------sessões--------
+-------Login--------
 
 CREATE TABLE user_sessions (
     sessionId INT AUTO_INCREMENT PRIMARY KEY,
